@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 import { AddBlogComponent } from './shared/components/add-blog/add-blog.component';
 import { LoginComponent } from './shared/components/login/login.component';
+import { RegisterComponent } from './shared/components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './shared/components/login/login.component';
     HomeComponent,
     BlogDetailComponent,
     AddBlogComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

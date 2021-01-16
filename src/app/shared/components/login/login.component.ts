@@ -9,7 +9,7 @@ import { CommonService } from '../../services/common.service';
 })
 export class LoginComponent implements OnInit {
 
-  isUserLoggedIn: boolean = false;
+  isRegisterEnabled: boolean = false;
 
   constructor(private router: Router, private service: CommonService) { }
 
@@ -17,9 +17,15 @@ export class LoginComponent implements OnInit {
   }
 
   navigateToDashboard(){
-    // this.isUserLoggedIn = true;
-    // this.service.activateHeaderFooter(this.isUserLoggedIn);
     this.router.navigate(['/home']);
+  }
+
+  navigateToRegister(){
+    this.router.navigate(['/register']);
+  }
+
+  openRegisterForm(){
+    this.isRegisterEnabled = true;
   }
 
 }

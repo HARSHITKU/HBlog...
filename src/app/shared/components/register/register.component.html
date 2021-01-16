@@ -8,14 +8,15 @@
         </div>
         <div class="form_container">
             <div class="form_wrapper">
-                <h1>Enjoy H Blogs...</h1>
-                <form (submit)="navigateToDashboard()">
+                <h1>Join H Blogs...</h1>
+                <form (submit)="navigateToLogin()">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter Name">
                     <label>Email</label>
                     <input type="email" name="email" placeholder="Enter Email">
                     <label>Password</label>
                     <input type="password" name="password" placeholder="Enter Password">
-                    <button type="submit">Login</button>
-                    <button type="button" class="register_button" (click)="navigateToRegister()">Register</button>
+                    <button type="submit">Register</button>
                 </form>
             </div>
         </div>
