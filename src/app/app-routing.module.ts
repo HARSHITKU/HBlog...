@@ -13,6 +13,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path:'new-blog', component:AddBlogComponent},
   {path:'blog-details', component:BlogDetailComponent},
+  {path:'**', component: LoginComponent}
 ];
 
 @NgModule({
