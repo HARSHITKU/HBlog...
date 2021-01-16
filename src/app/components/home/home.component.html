@@ -1,0 +1,9 @@
+<section class="blogs_container">
+    <div class="blogsList">
+        <blog-list (sendBlogDetails)="getBlogDetails($event)"></blog-list>
+    </div>
+    <div class="blogDetails">
+        <div class="loader" *ngIf="isDataProcessed"></div>
+        <blog-detail [blogDetails]="sendBlogDetailData"></blog-detail>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+.blogs_container{
+    display: flex;
+    margin: 5% 0 3% 0;
+
+    .blogsList{
+        width: 25%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .blogDetails{
+        position: fixed;
+        top: 10%;
+        left: 25%;
+        width: 73%;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+
+        .loader{
+            position: fixed;
+            top: 50%;
+            left: 60%;
+        }
+    }
+}

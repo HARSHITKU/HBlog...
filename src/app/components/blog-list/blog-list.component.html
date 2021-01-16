@@ -1,0 +1,8 @@
+<section>
+    <div class="blog_list_container" *ngFor = "let blog of blogs">
+        <div class="blog_list_wrapper" *ngIf="blog" (click)="openBlogDetails(blog)">
+            <h2>{{blog?.title}}</h2>
+            <p>{{blog?.description | slice: 0: 100}}​​​​​​​<span>....</span></p>
+        </div>
+    </div>
+</section>

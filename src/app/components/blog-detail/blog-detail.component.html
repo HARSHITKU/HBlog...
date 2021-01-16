@@ -1,0 +1,32 @@
+<section>
+    <div class="blog_detail_wrapper">
+        <div class="blog_title_duration_author_container">
+            <div class="blog_title">
+                <h2>
+                    {{blogDetails.title}}
+                </h2>
+            </div>
+            <div class="blog_duration_author">
+                <h4>
+                    {{blogDetails.author}}
+                </h4>
+                <h4>
+                    {{blogDetails.duration}} minutes Read
+                </h4>
+            </div>
+        </div>
+        <div class="blog_description">
+            <p>
+                {{blogDetails.description}}
+            </p>
+        </div>
+        <div class="image_container" *ngIf="blogDetails.image">
+            <img src="{{blogDetails.image}}" alt="{{blogDetails.title}}">
+        </div>
+        <div class="blog_paragraph">
+            <p>
+                {{blogDetails.paragraph}}
+            </p>
+        </div>
+    </div>
+</section>

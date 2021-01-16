@@ -1,0 +1,22 @@
+<section>
+    <div class="form_container">
+        <div class="form_wrapper">
+            <div class="image_container">
+                <img src="/assets/images/images/close.png" alt="close" [routerLink]="['/home']"/>
+            </div>
+            <form method="POST">
+                <label>Title</label>
+                <input type="text" name="title" placeholder="Your Blog Title">
+                <label>Description</label>
+                <textarea rows="8" placeholder="Your Blog Description"></textarea>
+                <label>Attach Video/Audio</label>
+                <input type="url" placeholder="Your Blog Audio/Video URL">
+                <label>Upload Image</label>
+                <img src="/assets/images/images/upload.png"  width="30px" alt="upload" (click)="fileInput.click()"/>
+                <input #fileInput type="file" style="display:none;" />
+                <button type="button">SUBMIT</button>
+                <button type="button" [routerLink]="['/home']">CANCEL</button>
+            </form>
+        </div>
+    </div>
+</section>
